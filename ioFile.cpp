@@ -13,4 +13,6 @@ int main() {
 
     // menunjuk ke sebuah nama file dalam membuka
     outfile.open("contoh file.txt");
+
+    cout << ">>= Menulis file, \'q' untuk keluar" << endl;
 }
