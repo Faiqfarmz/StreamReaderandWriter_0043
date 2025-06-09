@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    string bars;
+    string baris;
 
     // operasi file dalam mode menulis.
     ofstream outfile;
@@ -14,7 +14,7 @@ int main() {
     // menunjuk ke sebuah nama file dalam membuka
     outfile.open("contoh file.txt");
 
-    cout << ">>= Menulis file, \'q' untuk keluar" << endl;
+    cout << ">>= Menulis file, \'q\' untuk keluar" << endl;
 
     // unlimited loop untuk menulis
     while (true) {
@@ -23,5 +23,8 @@ int main() {
        getline(cin, baris); 
        // loop akan berheti jika anda memasukkan karakter q
        if (baris == "q") break;
+       // menulis dan memasukkan nilai dari 'baris' ke dalam file
+       outfile << baris << endl;
+        
     }
 }
