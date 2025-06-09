@@ -31,5 +31,7 @@ int main() {
     outfile.close();
     // operasi file dalam mode membaca
     ifstream infile;
+    //menunjukkan ke sebuah file untuk membuka
+    infile.open("contohfile.txt");
     
 }
